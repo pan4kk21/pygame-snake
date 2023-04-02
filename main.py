@@ -173,11 +173,11 @@ clock = pygame.time.Clock()
 apple = pygame.image.load('graphics/apple.png').convert_alpha()
 game_font = pygame.font.Font('font/PoetsenOne-Regular.ttf', 25)
 
-
 main_game = Main()
 
 SCREEN_UPDATE = pygame.USEREVENT
 pygame.time.set_timer(SCREEN_UPDATE, 150)
+pygame.display.set_caption('Snake')
 
 while True:
     for event in pygame.event.get():
